@@ -1,0 +1,732 @@
+<html>
+  <body>
+    <script>
+      window.google = {
+        kEI: "Quz2S63qIYeglAfw8oHGCg",
+        kEXPI: "17259,23663,24477,24661,24745,24770,24808",
+        kCSI: {
+          e: "17259,23663,24477,24661,24745,24770,24808",
+          ei: "Quz2S63qIYeglAfw8oHGCg",
+          expi: "17259,23663,24477,24661,24745,24770,24808"
+        },
+        ml: function() {},
+        pageState: "#",
+        kHL: "en",
+        time: function() {
+          return (new Date).getTime()
+        },
+        log: function(b, d, c) {
+          var a = new Image,
+            e = google,
+            g = e.lc,
+            f = e.li;
+          a.onerror = (a.onload = (a.onabort = function() {
+            delete g[f]
+          }));
+          g[f] = a;
+          c = c || "/gen_204?atyp=i&ct=" + b + "&cad=" + d + "&zx=" + google.time();
+          a.src = c;
+          e.li = f + 1
+        },
+        lc: [],
+        li: 0,
+        j: {
+          en: 1,
+          l: function() {},
+          e: function() {},
+          b: location.hash && location.hash != "#",
+          bv: 3,
+          pl: [],
+          mc: 0,
+          sc: 0.5
+        },
+        Toolbelt: {}
+      };
+      (function() {
+        for (var d = 0, c; c = ["ad", "bc", "p", "pa", "zd", "ac", "pc", "pah", "ph", "sa", "xx", "zc", "zz"][d++];)(function(a) {
+          google.j[a] = function() {
+            google.j.pl.push([a, arguments])
+          }
+        })(c)
+      })();
+      window.google.sn = "webhp";
+      window.google.timers = {
+        load: {
+          t: {
+            start: (new Date).getTime()
+          }
+        }
+      };
+      try {
+        window.google.pt = window.gtbExternal && window.gtbExternal.pageT();
+      } catch (u) {}
+      window.google.jsrt_kill = 1;
+
+    </script>
+    <style>
+
+
+    </style>
+
+
+    <script>
+      var _gjwl = location;
+
+      function _gjuc() {
+        var b = _gjwl.href.indexOf("#");
+        if (b >= 0) {
+          var a = _gjwl.href.substring(b + 1);
+          if (/(^|&)q=/.test(a) && a.indexOf("#") == -1 && !/(^|&)cad=h($|&)/.test(a)) {
+            _gjwl.replace("/search?" + a.replace(/(^|&)fp=[^&]*/g, "") + "&cad=h");
+            return 1
+          }
+        }
+        return 0
+      }
+
+      function _gjp() {
+        !(window._gjwl.hash && window._gjuc()) && setTimeout(_gjp, 500)
+      };
+      google.y = {};
+      google.x = function(e, g) {
+        google.y[e.id] = [e, g];
+        return false
+      };
+      if (!window.google) window.google = {};
+      window.google.crm = {};
+      window.google.cri = 0;
+      window.clk = function(e, f, g, k, l, b, m) {
+        if (document.images) {
+          var a = encodeURIComponent || escape,
+            c = new Image,
+            h = window.google.cri++;
+          window.google.crm[h] = c;
+          c.onerror = (c.onload = (c.onabort = function() {
+            delete window.google.crm[h]
+          }));
+          if (b && b.substring(0, 6) != "&sig2=") b = "&sig2=" + b;
+          c.src = ["/url?sa=T", "", f ? "&oi=" + a(f) : "", g ? "&cad=" + a(g) : "", "&ct=", a(k || "res"), "&cd=", a(l), "&ved=", a(m), e ? "&url=" + a(e.replace(/#.*/, "")).replace(/\+/g, "%2B") : "", "&ei=", "Quz2S63qIYeglAfw8oHGCg", b].join("")
+        }
+        return true
+      };
+      window.gbar = {
+        qs: function() {},
+        tg: function(e) {
+          var o = {
+            id: 'gbar'
+          };
+          for (i in e) o[i] = e[i];
+          google.x(o, function() {
+            gbar.tg(o)
+          })
+        }
+      };
+
+    </script>
+    </head>
+    <!-- textarea id=csi style=display:none>
+ </textarea -->
+    <script>
+      if (google.j.b) document.body.style.visibility = 'hidden';
+
+    </script>
+    <iframe name=wgjf style=display:none src="" onload="google.j.l()" onerror="google.j.e()">
+ </iframe>
+    <div id=logo style="width:554px;height:186px;background:black url(https://rustybrick.s3.amazonaws.com/pacman10-hp.png) 0 0 no-repeat;position:relative;margin-bottom:9px" title="PAC-MAN's 30th Birthday! Doodle with PAC-MANU & Éa980 NAMCO BANDAI Games Inc.">
+      <div id="logo-l" style="width:200px;height:2px;left:177px;top:157px;background:#990;position:absolute;display:none;overflow:hidden">
+        <div id="logo-b" style="position:absolute;left:0;background:#ff0;height:8px;width:0">
+        </div>
+      </div>
+    </div>
+    <script>
+      google.pml = function() {
+        function d(a) {
+          if (!google.pml_installed) {
+            google.pml_installed = true;
+            if (!a) {
+              document.getElementById("logo").style.background = "black";
+              window.setTimeout(function() {
+                var b = document.getElementById("logo-l");
+                if (b) b.style.display = "block"
+              }, 400)
+            }
+            a = document.createElement("script");
+            a.type = "text/javascript";
+
+
+            a.src = "https://rustybrick.s3.amazonaws.com/pacman10-hp.2.js";
+
+
+            google.dom.append(a)
+          }
+        }
+
+        function e() {
+          if (document.f && document.f.btnI) document.f.btnI.onclick = function() {
+            typeof google.pacman != "undefined" ? google.pacman.insertCoin() : d(false);
+            return false
+          }
+        }
+        if (!google.pml_loaded) {
+          google.pml_loaded = true;
+          window.setTimeout(function() {
+            document.f && document.f.q && document.f.q.value == "" && d(true)
+          }, 1E4);
+          e();
+          google.rein && google.rein.push(e);
+          google.dstr && google.dstr.push(function() {
+            google.pacman && google.pacman.destroy();
+            if (google.pml_installed) {
+              for (var a = (document.getElementById("xjsc") || document.body).getElementsByTagName("script"), b = 0, c; c = a[b++];) c.src.indexOf("/logos/js") != -1 && google.dom.remove(c);
+              google.pml_installed = false
+            }
+          });
+          google.pacManQuery = function() {
+            google.nav(document.getElementById("dlink").href)
+          }
+        }
+      };
+
+    </script>
+
+
+
+    <form action="/search" name=f onsubmit="google.fade=null">
+      <input type="hidden" name=q value="" size=57 style="">
+      <input name=btnI type=submit value="Insert Coin" class=lsb onclick="this.checked=1">
+    </form>
+
+
+    <div id=xjsd>
+    </div>
+    <div id=xjsi>
+      <script>
+        if (google.y) google.y.first = [];
+        if (google.y) google.y.first = [];
+        if (!google.xjs) {
+          google.dstr = [];
+          google.rein = [];
+          window.setTimeout(function() {
+            var a = document.createElement("script");
+            a.src = "https://rustybrick.s3.amazonaws.com/jscript.js";
+
+
+            (document.getElementById("xjsd") || document.body).appendChild(a);
+            if (google.timers && google.timers.load.t) google.timers.load.t.xjsls = (new Date).getTime();
+          }, 0);
+          google.xjs = 1
+        };
+        google.neegg = 1;
+        google.y.first.push(function() {
+          google.ac.i(document.f, document.f.q, '', '', 'ZAO1UHON4Cy3HD_vAXF7cQ', {
+            o: 1,
+            sw: 1
+          });
+          (function() {
+            var h, i, j = 1,
+              k = google.time(),
+              l = [];
+            google.rein.push(function() {
+              j = 1;
+              k = google.time()
+            });
+            google.dstr.push(function() {
+              google.fade = null
+            });
+
+            function m(a, f) {
+              var b = [];
+              for (var c = 0, e; e = a[c++];) {
+                var d = document.getElementById(e);
+                d && b.push(d)
+              }
+              for (var c = 0, g; g = f[c++];) b = b.concat(n(g[0], g[1]));
+              for (var c = 0; b[c]; c++) b[c] = [b[c], "opacity", 0, 1, 0, ""];
+              return b
+            }
+
+            function n(a, f) {
+              var b = [],
+                c = new RegExp("(^|\\s)" + f + "($|\\s)");
+              for (var e = 0, d, g = document.getElementsByTagName(a); d =
+                g[e++];) c.test(d.className) && b.push(d);
+              return b
+            }
+            google.fade = function(a) {
+              if (google.fx && j) {
+                a = a || window.event;
+                var f = 1,
+                  b = google.time() - k;
+                if (a && a.type == "mousemove") {
+                  var c = a.clientX,
+                    e = a.clientY;
+                  f = (h || i) && (h != c || i != e) && b > 600;
+                  h = c;
+                  i = e
+                }
+                if (f) {
+                  j = 0;
+                  google.fx.animate(600, m(["fctr", "ghead", "pmocntr", "sbl", "tba", "tbe"], [
+                    ["span", "fade"],
+                    ["div", "fade"],
+                    ["div", "gbh"]
+                  ]));
+                  for (var d = 0; d <
+                    l.length; ++d)
+                    if (typeof l[d] == "function") l[d]()
+                }
+              }
+            };
+            google.addFadeNotifier = function(a) {
+              l.push(a);
+              if (!j) a()
+            };
+          })();;
+          google.History && google.History.initialize('/')
+        });
+        if (google.j && google.j.en && google.j.xi) {
+          window.setTimeout(google.j.xi, 0);
+          google.fade = null;
+        }
+        google.pml && google.pml();
+
+      </script>
+    </div>
+    <script>
+      (function() {
+        var b, d, e, f;
+
+        function g(a, c) {
+          if (a.removeEventListener) {
+            a.removeEventListener("load", c, false);
+            a.removeEventListener("error", c, false)
+          } else {
+            a.detachEvent("onload", c);
+            a.detachEvent("onerror", c)
+          }
+        }
+
+        function h(a) {
+          f = (new Date).getTime();
+          ++d;
+          a = a || window.event;
+          var c = a.target || a.srcElement;
+          g(c, h)
+        }
+        var i = document.getElementsByTagName("img");
+        b = i.length;
+        d = 0;
+        for (var j = 0, k; j < b; ++j) {
+          k = i[j];
+          if (k.complete || typeof k.src != "string" || !k.src) ++d;
+          else if (k.addEventListener) {
+            k.addEventListener("load", h, false);
+            k.addEventListener("error",
+              h, false)
+          } else {
+            k.attachEvent("onload", h);
+            k.attachEvent("onerror", h)
+          }
+        }
+        e = b - d;
+
+        function l() {
+          google.timers.load.t.ol = (new Date).getTime();
+          google.timers.load.t.iml = f;
+          google.kCSI.imc = d;
+          google.kCSI.imn = b;
+          google.kCSI.imp = e;
+          google.report && google.report(google.timers.load, google.kCSI)
+        }
+        if (window.addEventListener) window.addEventListener("load", l, false);
+        else if (window.attachEvent) window.attachEvent("onload", l);
+        google.timers.load.t.prt = (f = (new Date).getTime());
+      })();
+
+    </script>
+
+
+
+    
+    <html>
+
+    <head>
+      <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 200px;
+          background-color: #515151;
+          border: 1px solid #555;
+        }
+
+        li a {
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+        }
+
+        li {
+          text-align: center;
+          border-bottom: 1px solid #555;
+        }
+
+        li:last-child {
+          border-bottom: none;
+        }
+
+        li a.active {
+          background-color: #4CAF50;
+          color: black;
+        }
+
+        li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+
+      </style>
+    </head>
+
+    <body>
+
+
+
+      
+      <html>
+
+      <head>
+        <style>
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #515151;
+            border: 1px solid #555;
+          }
+
+          li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+          }
+
+          li {
+            text-align: center;
+            border-bottom: 1px solid #555;
+          }
+
+          li:last-child {
+            border-bottom: none;
+          }
+
+          li a.active {
+            background-color: #4CAF50;
+            color: black;
+          }
+
+          li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+          }
+
+        </style>
+      </head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #c4c3ca;
+	background-color: #1f2029;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 4%;
+	overflow-x: hidden;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+}
+a {
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: none;
+}
+
+/* #Cursor
+================================================== */
+
+.cursor,
+.cursor2,
+.cursor3{
+	position: fixed;
+	border-radius: 50%;	
+	transform: translateX(-50%) translateY(-50%);
+	pointer-events: none;
+	left: -100px;
+	top: 50%;
+	mix-blend-mode: difference;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+}
+.cursor{
+	background-color: #fff;
+	height: 0;
+	width: 0;
+	z-index: 99999;
+}
+.cursor2,.cursor3{
+	height: 36px;
+	width: 36px;
+	z-index:99998;
+	-webkit-transition:all 0.3s ease-out;
+	transition:all 0.3s ease-out
+}
+.cursor2.hover,
+.cursor3.hover{
+	-webkit-transform:scale(2) translateX(-25%) translateY(-25%);
+	transform:scale(2) translateX(-25%) translateY(-25%);
+	border:none
+}
+.cursor2{
+	border: 2px solid #fff;
+	box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
+}
+.cursor2.hover{
+	background: rgba(255,255,255,1);
+	box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 1200px){
+	.cursor,.cursor2,.cursor3{
+		display: none
+	}
+}
+</style>
+<html>
+<footer>
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mithril/0.2.0/mithril.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+
+    <style id="compiled-css" type="text/css">
+      .draw-border {
+        box-shadow: inset 0 0 0 4px #58afd1;
+        color: #58afd1;
+        transition: color 0.25s 0.08333s;
+        position: relative;
+      }
+
+      .draw-border::before,
+      .draw-border::after {
+        border: 0 solid transparent;
+        box-sizing: border-box;
+        content: '';
+        pointer-events: none;
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: 0;
+        right: 0;
+      }
+
+      .draw-border::before {
+        border-bottom-width: 4px;
+        border-left-width: 4px;
+      }
+
+      .draw-border::after {
+        border-top-width: 4px;
+        border-right-width: 4px;
+      }
+
+      .draw-border:hover {
+        color: #ffe593;
+      }
+
+      .draw-border:hover::before,
+      .draw-border:hover::after {
+        border-color: #ffe593;
+        transition: border-color 0s, width 0.25s, height 0.25s;
+        width: 100%;
+        height: 100%;
+      }
+
+      .draw-border:hover::before {
+        transition-delay: 0s, 0s, 0.25s;
+      }
+
+      .draw-border:hover::after {
+        transition-delay: 0s, 0.25s, 0s;
+      }
+
+      .btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        line-height: 1.5;
+        font: 700 1.2rem 'Roboto Slab', sans-serif;
+        padding: 1em 2em;
+        letter-spacing: 0.05rem;
+      }
+
+      .btn:focus {
+        outline: 2px dotted #55d7dc;
+      }
+
+      body {
+        background: #1f1a25;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+    </style>
+
+
+
+  </head>
+
+  <body>
+    <button onclick="location.href='../../index.html'" class="btn draw-border">Home
+    </button
+    <head>
+      <title></title>
+      <style>
+        html,
+        body {
+          height: 100%;
+          margin: 0;
+        }
+
+        body {
+          background: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        canvas {
+          border: 1px solid white;
+        }
+
+      </style>
+</footer>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 1.7;
+	color: #c4c3ca;
+	background-color: #1f2029;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+  background-position: center;
+  background-repeat: repeat;	
+  background-size: 4%;
+	overflow-x: hidden;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+}
+a {
+	cursor: pointer;
+}
+a:hover {
+	text-decoration: none;
+}
+
+/* #Cursor
+================================================== */
+
+.cursor,
+.cursor2,
+.cursor3{
+	position: fixed;
+	border-radius: 50%;	
+	transform: translateX(-50%) translateY(-50%);
+	pointer-events: none;
+	left: -100px;
+	top: 50%;
+	mix-blend-mode: difference;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+}
+.cursor{
+	background-color: #fff;
+	height: 0;
+	width: 0;
+	z-index: 99999;
+}
+.cursor2,.cursor3{
+	height: 36px;
+	width: 36px;
+	z-index:99998;
+	-webkit-transition:all 0.3s ease-out;
+	transition:all 0.3s ease-out
+}
+.cursor2.hover,
+.cursor3.hover{
+	-webkit-transform:scale(2) translateX(-25%) translateY(-25%);
+	transform:scale(2) translateX(-25%) translateY(-25%);
+	border:none
+}
+.cursor2{
+	border: 2px solid #fff;
+	box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
+}
+.cursor2.hover{
+	background: rgba(255,255,255,1);
+	box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+@media screen and (max-width: 1200px){
+	.cursor,.cursor2,.cursor3{
+		display: none
+	}
+}
+</style>
+
+
+</div>	
+	
+	<div class='cursor' id="cursor"></div>
+	<div class='cursor2' id="cursor2"></div>
+	<div class='cursor3' id="cursor3"></div>
+
+<!-- Link to page
+================================================== -->
+
+     
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+</html>

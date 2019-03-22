@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Ninja</title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="description" content="HTML5 game similar to Halfbrick's Fruit Ninja">
+    <meta name="keywords" content="web,ninja,enchantjs,enchant.js,juego,videogame,video,game,lavamade,epale,vaca,mariposa,digital,ensemble">
+    <meta name="author" content="La Vaca Mariposa Digital Ensemble">
+    <meta charset="UTF-8">
+    <link href='http://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="javascripts/Box2dWeb-2.1.a.3.js"></script>
+    <script type="text/javascript" src="javascripts/enchant.js"></script>
+    <script type="text/javascript" src="javascripts/plugins/box2d.enchant.js"></script>
+    <script type="text/javascript">
+        var g_ImgBackgroundGameplay = "images/background_gameplay.jpg";
+        var g_ImgBackgroundGameOver = "images/background_gameover.png";
+        var g_ImgGameOver           = "images/gameover.png";
+        var g_ImgBomb               = "images/bomb.png";
+        var g_ImgFruits             = "images/fruits.png";
+        var g_ImgScore              = "images/score.png";
+        var g_ImgSplash             = "images/splash.png";
+        var game;
+        enchant();
+    </script>
+    <script type="text/javascript">
+    window.onload = function () {
+        game = new Game(760,570);
+        game.fps = 60;
+        game.preload(
+            g_ImgBackgroundGameplay,
+            g_ImgBackgroundGameOver,
+            g_ImgBomb,
+            g_ImgFruits,
+            g_ImgScore,
+            g_ImgSplash,
+            g_ImgGameOver
+        );
+        game.onload = function () {
+            goToScene("main", game);
+        };
+        game.start();
+    };
+    function goToScene(scene, gameObj) {
+        var newScene;
+        switch (scene) {
+            default:
+            case "main":
+                newScene = new MainScene(gameObj);https://github.com/you
+                break;
+            case "over":
+                newScene = new GameOverScene(gameObj);
+                break;
+        }
+        gameObj.replaceScene(newScene);
+    };
+    </script>
+    <script type="text/javascript" src="javascripts/splash.js"></script>
+    <script type="text/javascript" src="javascripts/fruit.js"></script>
+    <script type="text/javascript" src="javascripts/bomb.js"></script>
+    <script type="text/javascript" src="javascripts/scene_main.js"></script>
+    <script type="text/javascript" src="javascripts/scene_gameover.js"></script>
+    <style type="text/css">
+        body {
+            background: #000;
+            margin: 0;
+            padding: 0;
+        }
+        #enchant-stage {
+            padding: 0;
+            margin: 0 auto 0;
+            width: 760px;
+            height: 570px;
+        }
+    </style>
+</head>
+<body>
+</body>
+</html>
